@@ -1,0 +1,22 @@
+{
+  "files": ["src/auth.ts", "src/user.ts"],
+  "symbols": [
+    { "id": "f1", "type": "FILE", "name": "auth.ts" },
+    { "id": "f2", "type": "FILE", "name": "user.ts" },
+    { "id": "c1", "type": "CLASS", "name": "AuthService" },
+    { "id": "m1", "type": "METHOD", "name": "loginUser" },
+    { "id": "m2", "type": "METHOD", "name": "verifyPassword" },
+    { "id": "m3", "type": "METHOD", "name": "generateToken" },
+    { "id": "f3", "type": "FUNCTION", "name": "findUser" }
+  ],
+  "relationships": [
+    { "from": "f1", "to": "c1", "relation": "CONTAINS" },
+    { "from": "c1", "to": "m1", "relation": "CONTAINS" },
+    { "from": "m1", "to": "m2", "relation": "CALLS" },
+    { "from": "m1", "to": "m3", "relation": "CALLS" },
+    { "from": "f1", "to": "f2", "relation": "IMPORTS" },
+    { "from": "m1", "to": "f3", "relation": "CALLS" },
+    { "from": "f2", "to": "f3", "relation": "CONTAINS" },
+    { "from": "m2", "to": "c1", "relation": "REFERENCES" }
+  ]
+}

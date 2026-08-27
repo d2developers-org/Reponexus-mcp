@@ -1,0 +1,89 @@
+{
+  "files": [
+    "learn-ts-morph/sample.ts"
+  ],
+  "symbols": [
+    {
+      "type": "interface",
+      "name": "AuthContext",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 3,
+      "endLine": 6
+    },
+    {
+      "type": "class",
+      "name": "AuthService",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 8,
+      "endLine": 19
+    },
+    {
+      "type": "method",
+      "name": "login",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 11,
+      "endLine": 14,
+      "parameters": [
+        "username"
+      ],
+      "returnType": "void"
+    },
+    {
+      "type": "method",
+      "name": "verifyCredentials",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 16,
+      "endLine": 18,
+      "parameters": [],
+      "returnType": "boolean"
+    },
+    {
+      "type": "function",
+      "name": "generateToken",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 21,
+      "endLine": 23,
+      "parameters": [
+        "user"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "learn-ts-morph/sample.ts",
+      "to": "./user",
+      "relation": "IMPORTS"
+    },
+    {
+      "from": "learn-ts-morph/sample.ts",
+      "to": "AuthService",
+      "relation": "CONTAINS"
+    },
+    {
+      "from": "AuthService",
+      "to": "login",
+      "relation": "CONTAINS"
+    },
+    {
+      "from": "login",
+      "to": "verifyCredentials",
+      "relation": "CALLS"
+    },
+    {
+      "from": "AuthService",
+      "to": "verifyCredentials",
+      "relation": "CONTAINS"
+    },
+    {
+      "from": "learn-ts-morph/sample.ts",
+      "to": "generateToken",
+      "relation": "CONTAINS"
+    },
+    {
+      "from": "learn-ts-morph/sample.ts",
+      "to": "AuthContext",
+      "relation": "CONTAINS"
+    }
+  ]
+}

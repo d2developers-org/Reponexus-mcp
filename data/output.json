@@ -1,22 +1,89 @@
 {
-  "files": ["src/auth.ts", "src/user.ts"],
+  "files": [
+    "learn-ts-morph/sample.ts"
+  ],
   "symbols": [
-    { "id": "f1", "type": "FILE", "name": "auth.ts" },
-    { "id": "f2", "type": "FILE", "name": "user.ts" },
-    { "id": "c1", "type": "CLASS", "name": "AuthService" },
-    { "id": "m1", "type": "METHOD", "name": "loginUser" },
-    { "id": "m2", "type": "METHOD", "name": "verifyPassword" },
-    { "id": "m3", "type": "METHOD", "name": "generateToken" },
-    { "id": "f3", "type": "FUNCTION", "name": "findUser" }
+    {
+      "type": "interface",
+      "name": "AuthContext",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 3,
+      "endLine": 6
+    },
+    {
+      "type": "class",
+      "name": "AuthService",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 8,
+      "endLine": 19
+    },
+    {
+      "type": "method",
+      "name": "login",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 11,
+      "endLine": 14,
+      "parameters": [
+        "username"
+      ],
+      "returnType": "void"
+    },
+    {
+      "type": "method",
+      "name": "verifyCredentials",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 16,
+      "endLine": 18,
+      "parameters": [],
+      "returnType": "boolean"
+    },
+    {
+      "type": "function",
+      "name": "generateToken",
+      "file": "learn-ts-morph/sample.ts",
+      "startLine": 21,
+      "endLine": 23,
+      "parameters": [
+        "user"
+      ],
+      "returnType": "string"
+    }
   ],
   "relationships": [
-    { "from": "f1", "to": "c1", "relation": "CONTAINS" },
-    { "from": "c1", "to": "m1", "relation": "CONTAINS" },
-    { "from": "m1", "to": "m2", "relation": "CALLS" },
-    { "from": "m1", "to": "m3", "relation": "CALLS" },
-    { "from": "f1", "to": "f2", "relation": "IMPORTS" },
-    { "from": "m1", "to": "f3", "relation": "CALLS" },
-    { "from": "f2", "to": "f3", "relation": "CONTAINS" },
-    { "from": "m2", "to": "c1", "relation": "REFERENCES" }
+    {
+      "from": "learn-ts-morph/sample.ts",
+      "to": "./user",
+      "relation": "IMPORTS"
+    },
+    {
+      "from": "learn-ts-morph/sample.ts",
+      "to": "AuthService",
+      "relation": "CONTAINS"
+    },
+    {
+      "from": "AuthService",
+      "to": "login",
+      "relation": "CONTAINS"
+    },
+    {
+      "from": "login",
+      "to": "verifyCredentials",
+      "relation": "CALLS"
+    },
+    {
+      "from": "AuthService",
+      "to": "verifyCredentials",
+      "relation": "CONTAINS"
+    },
+    {
+      "from": "learn-ts-morph/sample.ts",
+      "to": "generateToken",
+      "relation": "CONTAINS"
+    },
+    {
+      "from": "learn-ts-morph/sample.ts",
+      "to": "AuthContext",
+      "relation": "CONTAINS"
+    }
   ]
 }

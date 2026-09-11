@@ -1,9 +1,16 @@
 import { InMemoryGraph } from './InMemoryGraph';
-import { Node, EdgeType } from './types';
+import { Node } from './types';
 
 export type ExpandedContext = {
   depth: number;
   nodes: Node[];
+};
+
+export type TargetResolution = {
+  query: string;
+  status: 'matched' | 'ambiguous' | 'not-found';
+  target?: Node;
+  candidates: Node[];
 };
 
 export class GraphQueryEngine {
@@ -73,6 +80,63 @@ export class GraphQueryEngine {
    */
   public findNode(name: string): Node[] {
     return this.graph.getAllNodes().filter((node) => node.name === name);
+  }
+
+  /**
+   * Resolves descriptive user text to the most relevant graph symbol.
+   */
+  public resolveTarget(query: string): TargetResolution {
+    const normalizedQuery = query.trim();
+    if (!normalizedQuery) {
+      return { query, status: 'not-found', candidates: [] };
+    }
+
+    const queryTokens = normalizedQuery.match(/[A-Za-z_$][\w$.-]*/g) ?? [];
+    const scored = this.graph.getAllNodes()
+      .map((node) => ({ node, score: this.getTargetScore(node, normalizedQuery, queryTokens) }))
+      .filter((candidate) => candidate.score > 0)
+      .sort((left, right) => right.score - left.score || left.node.id.localeCompare(right.node.id));
+
+    if (scored.length === 0) {
+      return { query, status: 'not-found', candidates: [] };
+    }
+
+    const highestScore = scored[0].score;
+    const candidates = scored
+      .filter((candidate) => candidate.score === highestScore)
+      .map((candidate) => candidate.node);
+
+    if (candidates.length !== 1) {
+      return { query, status: 'ambiguous', candidates };
+    }
+
+    return { query, status: 'matched', target: candidates[0], candidates };
+  }
+
+  private getTargetScore(node: Node, query: string, queryTokens: string[]): number {
+    const normalizedName = node.name.toLowerCase();
+    const exactName = node.name === query.trim();
+    const caseInsensitiveName = normalizedName === query.trim().toLowerCase();
+    const nameToken = queryTokens.some((token) => token === node.name);
+    const caseInsensitiveNameToken = queryTokens.some((token) => token.toLowerCase() === normalizedName);
+
+    if (exactName) return 1000;
+    if (caseInsensitiveName) return 900;
+    if (nameToken) return 800;
+    if (caseInsensitiveNameToken) return 700;
+
+    if (node.filePath) {
+      const normalizedPath = node.filePath.toLowerCase();
+      const normalizedQuery = query.toLowerCase();
+      if (normalizedPath === normalizedQuery || normalizedPath.endsWith(`/${normalizedQuery}`)) {
+        return 600;
+      }
+      if (normalizedPath.includes(normalizedQuery)) {
+        return 500;
+      }
+    }
+
+    return 0;
   }
 
   /**

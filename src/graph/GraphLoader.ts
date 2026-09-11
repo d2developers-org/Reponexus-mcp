@@ -8,6 +8,11 @@ export interface GraphDataPayload {
   relationships: Edge[];
 }
 
+type RawSymbol = Partial<Node> & {
+  id?: string;
+  file?: string;
+};
+
 export class GraphLoader {
   /**
    * Loads graph data from a JSON file and populates the InMemoryGraph.
@@ -20,12 +25,33 @@ export class GraphLoader {
     }
 
     const rawData = fs.readFileSync(filePath, 'utf-8');
-    const parsedData = JSON.parse(rawData) as GraphDataPayload;
+    const parsedData = JSON.parse(rawData) as Partial<GraphDataPayload> & {
+      symbols?: RawSymbol[];
+    };
+
+    const nodeIdsByName = new Map<string, string>();
+
+    for (const filePath of parsedData.files ?? []) {
+      graph.addNode({ id: filePath, type: 'FILE', name: filePath, filePath });
+      nodeIdsByName.set(filePath, filePath);
+    }
 
     // 1. Load Symbols (Nodes)
     if (parsedData.symbols && Array.isArray(parsedData.symbols)) {
       for (const symbol of parsedData.symbols) {
-        graph.addNode(symbol);
+        const name = symbol.name;
+        if (!name) continue;
+
+        const node: Node = {
+          id: symbol.id ?? name,
+          type: String(symbol.type ?? 'FUNCTION').toUpperCase() as Node['type'],
+          name,
+          filePath: symbol.filePath ?? symbol.file,
+          startLine: symbol.startLine,
+          endLine: symbol.endLine
+        };
+        graph.addNode(node);
+        nodeIdsByName.set(name, node.id);
       }
     } else {
       console.warn("No 'symbols' array found in the input data.");
@@ -35,7 +61,12 @@ export class GraphLoader {
     if (parsedData.relationships && Array.isArray(parsedData.relationships)) {
       for (const relation of parsedData.relationships) {
         try {
-          graph.addEdge(relation);
+          const edge = {
+            ...relation,
+            from: nodeIdsByName.get(relation.from) ?? relation.from,
+            to: nodeIdsByName.get(relation.to) ?? relation.to
+          };
+          graph.addEdge(edge);
         } catch (e: any) {
           console.warn(`Skipping invalid edge: ${e.message}`);
         }

@@ -4,6 +4,7 @@ import { GraphLoader } from './graph/GraphLoader';
 import { GraphQueryEngine } from './graph/GraphQueryEngine';
 
 export { InMemoryGraph, GraphLoader, GraphQueryEngine };
+export type { TargetResolution } from './graph/GraphQueryEngine';
 function main() {
   console.log('--- AGCP Graph Engine ---');
   
@@ -27,19 +28,19 @@ function main() {
 
     const formatNodes = (nodes: any[]) => nodes.map(n => `[${n.type}] ${n.name}`).join(', ');
 
-    // Example Relations (Day 4)
-    console.log('--- Relations (Day 4) ---');
-    console.log('findNode("loginUser") ->', formatNodes(queryEngine.findNode('loginUser')));
-    console.log('getCallees("m1") ->', formatNodes(queryEngine.getCallees('m1')));
-    console.log('getReferences("c1") ->', formatNodes(queryEngine.getReferences('c1')));
+    console.log('--- Target Resolution (Day 2) ---');
+    const resolution = queryEngine.resolveTarget('Modify login() logic');
+    console.log('resolveTarget("Modify login() logic") ->', resolution.status,
+      resolution.target ? `[${resolution.target.type}] ${resolution.target.name}` : resolution.candidates);
 
-    // Example BFS Context Expansion (Day 5)
-    console.log('\n--- BFS Context Expansion (Day 5) ---');
-    console.log('Expanding context for "loginUser" (m1) to max depth 2:');
-    const expansion = queryEngine.getContextExpansion('m1', 2);
-    expansion.forEach(layer => {
-      console.log(`Depth ${layer.depth} -> [${formatNodes(layer.nodes)}]`);
-    });
+    if (resolution.target) {
+      console.log('\n--- BFS Context Expansion ---');
+      console.log(`Expanding context for "${resolution.target.name}" to max depth 2:`);
+      const expansion = queryEngine.getContextExpansion(resolution.target.id, 2);
+      expansion.forEach(layer => {
+        console.log(`Depth ${layer.depth} -> [${formatNodes(layer.nodes)}]`);
+      });
+    }
 
   } catch (error: any) {
     console.error(`\n[ERROR] Failed to load graph: ${error.message}`);

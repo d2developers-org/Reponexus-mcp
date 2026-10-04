@@ -1,10 +1,11 @@
 import * as path from 'path';
 import { InMemoryGraph } from './graph/InMemoryGraph';
 import { GraphLoader } from './graph/GraphLoader';
-import { GraphQueryEngine } from './graph/GraphQueryEngine';
+import { DEFAULT_MAX_DEPTH, GraphQueryEngine } from './graph/GraphQueryEngine';
 
 export { InMemoryGraph, GraphLoader, GraphQueryEngine };
-export type { TargetResolution } from './graph/GraphQueryEngine';
+export { DEFAULT_MAX_DEPTH } from './graph/GraphQueryEngine';
+export type { AdaptiveContextItem, ContextPlan, TargetResolution } from './graph/GraphQueryEngine';
 function main() {
   console.log('--- AGCP Graph Engine ---');
   
@@ -28,19 +29,15 @@ function main() {
 
     const formatNodes = (nodes: any[]) => nodes.map(n => `[${n.type}] ${n.name}`).join(', ');
 
-    console.log('--- Target Resolution (Day 2) ---');
-    const resolution = queryEngine.resolveTarget('Modify login() logic');
-    console.log('resolveTarget("Modify login() logic") ->', resolution.status,
-      resolution.target ? `[${resolution.target.type}] ${resolution.target.name}` : resolution.candidates);
-
-    if (resolution.target) {
-      console.log('\n--- BFS Context Expansion ---');
-      console.log(`Expanding context for "${resolution.target.name}" to max depth 2:`);
-      const expansion = queryEngine.getContextExpansion(resolution.target.id, 2);
-      expansion.forEach(layer => {
-        console.log(`Depth ${layer.depth} -> [${formatNodes(layer.nodes)}]`);
-      });
-    }
+    console.log('--- Context Planning (Day 5) ---');
+    const plan = queryEngine.planContext('Modify login() logic');
+    console.log(`planContext("Modify login() logic") -> ${plan.status}`);
+    console.log(`Target: ${plan.target ? `[${plan.target.type}] ${plan.target.name}` : 'none'}`);
+    console.log(`Selected symbols: ${plan.selectedSymbols.join(', ') || 'none'}`);
+    plan.context.forEach(item => {
+      const via = item.via ? ` via ${item.via}` : '';
+      console.log(`Depth ${item.depth}${via} -> [${formatNodes([item.node])}]`);
+    });
 
   } catch (error: any) {
     console.error(`\n[ERROR] Failed to load graph: ${error.message}`);

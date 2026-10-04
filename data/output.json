@@ -1,6 +1,7 @@
 {
   "files": [
-    "learn-ts-morph/sample.ts"
+    "learn-ts-morph/sample.ts",
+    "learn-ts-morph/user.ts"
   ],
   "symbols": [
     {
@@ -47,12 +48,19 @@
         "user"
       ],
       "returnType": "string"
+    },
+    {
+      "type": "interface",
+      "name": "User",
+      "file": "learn-ts-morph/user.ts",
+      "startLine": 1,
+      "endLine": 3
     }
   ],
   "relationships": [
     {
       "from": "learn-ts-morph/sample.ts",
-      "to": "./user",
+      "to": "learn-ts-morph/user.ts",
       "relation": "IMPORTS"
     },
     {

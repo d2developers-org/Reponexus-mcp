@@ -1,5 +1,7 @@
 import { InMemoryGraph } from './InMemoryGraph';
-import { Node } from './types';
+import { Edge, EdgeType, Node } from './types';
+
+export const DEFAULT_MAX_DEPTH = 3;
 
 export type ExpandedContext = {
   depth: number;
@@ -11,6 +13,25 @@ export type TargetResolution = {
   status: 'matched' | 'ambiguous' | 'not-found';
   target?: Node;
   candidates: Node[];
+};
+
+export type AdaptiveContextItem = {
+  node: Node;
+  depth: number;
+  via?: EdgeType;
+  edge?: Edge;
+};
+
+export type ContextPlan = {
+  query: string;
+  status: TargetResolution['status'];
+  maxDepth: number;
+  target?: Node;
+  candidates: Node[];
+  selectedSymbols: string[];
+  nodes: Node[];
+  relationships: Edge[];
+  context: AdaptiveContextItem[];
 };
 
 export class GraphQueryEngine {
@@ -73,6 +94,81 @@ export class GraphQueryEngine {
     }
 
     return result;
+  }
+
+  /**
+   * Expands only semantically useful relationships and annotates each result
+   * with the edge that introduced it.
+   */
+  public getAdaptiveContext(startNodeId: string, maxDepth: number = DEFAULT_MAX_DEPTH): AdaptiveContextItem[] {
+    const startNode = this.graph.getNode(startNodeId);
+    if (!startNode || !Number.isInteger(maxDepth) || maxDepth < 0) return [];
+
+    const relationshipPriority: EdgeType[] = [
+      'CALLS',
+      'IMPORTS',
+      'REFERENCES',
+      'EXTENDS',
+      'IMPLEMENTS'
+    ];
+    const priority = new Map(relationshipPriority.map((relation, index) => [relation, index]));
+    const visited = new Set<string>([startNodeId]);
+    const result: AdaptiveContextItem[] = [{ node: startNode, depth: 0 }];
+    let currentQueue = [startNodeId];
+
+    for (let depth = 1; depth <= maxDepth && currentQueue.length > 0; depth++) {
+      const nextQueue: string[] = [];
+      const candidates = currentQueue.flatMap((nodeId) => this.graph.getEdgesFrom(nodeId))
+        .filter((edge) => priority.has(edge.relation) && !visited.has(edge.to))
+        .sort((left, right) => (priority.get(left.relation) ?? 0) - (priority.get(right.relation) ?? 0));
+
+      for (const edge of candidates) {
+        if (visited.has(edge.to)) continue;
+
+        const node = this.graph.getNode(edge.to);
+        if (!node) continue;
+
+        visited.add(edge.to);
+        nextQueue.push(edge.to);
+        result.push({ node, depth, via: edge.relation, edge });
+      }
+
+      currentQueue = nextQueue;
+    }
+
+    return result;
+  }
+
+  /**
+   * Resolves a user request and creates the minimal adaptive context plan.
+   */
+  public planContext(query: string, maxDepth: number = DEFAULT_MAX_DEPTH): ContextPlan {
+    const resolution = this.resolveTarget(query);
+    if (resolution.status !== 'matched' || !resolution.target) {
+      return {
+        query,
+        status: resolution.status,
+        maxDepth,
+        candidates: resolution.candidates,
+        selectedSymbols: [],
+        nodes: [],
+        relationships: [],
+        context: []
+      };
+    }
+
+    const context = this.getAdaptiveContext(resolution.target.id, maxDepth);
+    return {
+      query,
+      status: resolution.status,
+      maxDepth,
+      target: resolution.target,
+      candidates: resolution.candidates,
+      selectedSymbols: context.map((item) => item.node.id),
+      nodes: context.map((item) => item.node),
+      relationships: context.flatMap((item) => item.edge ? [item.edge] : []),
+      context
+    };
   }
 
   /**

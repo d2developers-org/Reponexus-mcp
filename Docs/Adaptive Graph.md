@@ -65,7 +65,10 @@ System Architecture
 ________________________________________
 Workflow
 Step 1 – Repository Analysis
-The repository is parsed using AST-based analysis.
+The repository is parsed using Tree-sitter grammars and normalized into a
+shared symbol-and-relationship representation. Current syntax support includes
+JavaScript, TypeScript/TSX, Python, Java, C++, Go, and Rust. `ts-morph` can be
+used as a separate TypeScript semantic-enrichment layer.
 The parser extracts:
 •	Functions
 •	Classes
@@ -154,7 +157,7 @@ This project proposes an open, MCP-compatible architecture where a dedicated con
 ________________________________________
 Future Scope
 Future enhancements may include:
-•	Multi-language repository support
+•	Cross-language symbol and type resolution
 •	Distributed graph indexing for enterprise repositories
 •	Learning-based context ranking
 •	Automated refactoring recommendations
@@ -165,7 +168,7 @@ Future enhancements may include:
 ________________________________________
 Technologies
 •	Model Context Protocol (MCP)
-•	Tree-sitter / ts-morph
+•	Tree-sitter (multi-language parsing) / ts-morph (TypeScript semantics)
 •	Language Server Protocol (LSP)
 •	Graph Database (Neo4j, KuzuDB, or FalkorDB)
 •	Node.js / TypeScript

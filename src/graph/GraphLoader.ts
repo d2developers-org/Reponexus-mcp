@@ -61,11 +61,26 @@ export class GraphLoader {
     if (parsedData.relationships && Array.isArray(parsedData.relationships)) {
       for (const relation of parsedData.relationships) {
         try {
+          // Attempt strict lookup
+          let fromId = nodeIdsByName.get(relation.from);
+          let toId = nodeIdsByName.get(relation.to);
+
+          // Fuzzy fallback for Tree-sitter AST issues (e.g., "this.methodName" or "Class.methodName")
+          if (!fromId && typeof relation.from === 'string' && relation.from.includes('.')) {
+            const fromParts = relation.from.split('.');
+            fromId = nodeIdsByName.get(fromParts[fromParts.length - 1]);
+          }
+          if (!toId && typeof relation.to === 'string' && relation.to.includes('.')) {
+            const toParts = relation.to.split('.');
+            toId = nodeIdsByName.get(toParts[toParts.length - 1]);
+          }
+
           const edge = {
             ...relation,
-            from: nodeIdsByName.get(relation.from) ?? relation.from,
-            to: nodeIdsByName.get(relation.to) ?? relation.to
+            from: fromId ?? relation.from,
+            to: toId ?? relation.to
           };
+          
           graph.addEdge(edge);
         } catch (e: any) {
           console.warn(`Skipping invalid edge: ${e.message}`);

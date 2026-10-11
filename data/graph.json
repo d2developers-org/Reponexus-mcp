@@ -1,0 +1,3479 @@
+{
+  "nodes": [
+    {
+      "id": "file:learn-ts-morph/sample.ts",
+      "type": "FILE",
+      "name": "sample.ts",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 0,
+      "endLine": 0
+    },
+    {
+      "id": "file:learn-ts-morph/scanner.ts",
+      "type": "FILE",
+      "name": "scanner.ts",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 0,
+      "endLine": 0
+    },
+    {
+      "id": "file:learn-ts-morph/user.ts",
+      "type": "FILE",
+      "name": "user.ts",
+      "filePath": "learn-ts-morph/user.ts",
+      "startLine": 0,
+      "endLine": 0
+    },
+    {
+      "id": "file:src/ast/TreeSitterExtractor.test.ts",
+      "type": "FILE",
+      "name": "TreeSitterExtractor.test.ts",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 0,
+      "endLine": 0
+    },
+    {
+      "id": "file:src/ast/TreeSitterExtractor.ts",
+      "type": "FILE",
+      "name": "TreeSitterExtractor.ts",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 0,
+      "endLine": 0
+    },
+    {
+      "id": "file:src/ast/TreeSitterLanguage.ts",
+      "type": "FILE",
+      "name": "TreeSitterLanguage.ts",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 0,
+      "endLine": 0
+    },
+    {
+      "id": "file:src/ast/indexRepository.ts",
+      "type": "FILE",
+      "name": "indexRepository.ts",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 0,
+      "endLine": 0
+    },
+    {
+      "id": "file:src/ast/types.ts",
+      "type": "FILE",
+      "name": "types.ts",
+      "filePath": "src/ast/types.ts",
+      "startLine": 0,
+      "endLine": 0
+    },
+    {
+      "id": "file:learn-ts-morph/sample.ts",
+      "type": "FILE",
+      "name": "learn-ts-morph/sample.ts",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 1,
+      "endLine": 24
+    },
+    {
+      "id": "module:./user",
+      "type": "MODULE",
+      "name": "./user",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 1,
+      "endLine": 1
+    },
+    {
+      "id": "symbol:learn-ts-morph/sample.ts:3:interface:AuthContext",
+      "type": "INTERFACE",
+      "name": "AuthContext",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 3,
+      "endLine": 6
+    },
+    {
+      "id": "symbol:learn-ts-morph/sample.ts:8:class:AuthService",
+      "type": "CLASS",
+      "name": "AuthService",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 8,
+      "endLine": 19
+    },
+    {
+      "id": "symbol:learn-ts-morph/sample.ts:9:method:constructor",
+      "type": "METHOD",
+      "name": "constructor",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 9,
+      "endLine": 9
+    },
+    {
+      "id": "symbol:learn-ts-morph/sample.ts:11:method:login",
+      "type": "METHOD",
+      "name": "login",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 11,
+      "endLine": 14
+    },
+    {
+      "id": "symbol:learn-ts-morph/sample.ts:16:method:verifyCredentials",
+      "type": "METHOD",
+      "name": "verifyCredentials",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 16,
+      "endLine": 18
+    },
+    {
+      "id": "symbol:learn-ts-morph/sample.ts:21:function:generateToken",
+      "type": "FUNCTION",
+      "name": "generateToken",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 21,
+      "endLine": 23
+    },
+    {
+      "id": "reference:console.log",
+      "type": "REFERENCE",
+      "name": "console.log",
+      "filePath": "learn-ts-morph/sample.ts",
+      "startLine": 12,
+      "endLine": 12
+    },
+    {
+      "id": "file:learn-ts-morph/scanner.ts",
+      "type": "FILE",
+      "name": "learn-ts-morph/scanner.ts",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 1,
+      "endLine": 55
+    },
+    {
+      "id": "module:ts-morph",
+      "type": "MODULE",
+      "name": "ts-morph",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 1,
+      "endLine": 1
+    },
+    {
+      "id": "module:path",
+      "type": "MODULE",
+      "name": "path",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 2,
+      "endLine": 2
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:5:variable:project",
+      "type": "VARIABLE",
+      "name": "project",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 5,
+      "endLine": 5
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:8:variable:sampleFilePath",
+      "type": "VARIABLE",
+      "name": "sampleFilePath",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 8,
+      "endLine": 8
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:9:variable:sourceFile",
+      "type": "VARIABLE",
+      "name": "sourceFile",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 9,
+      "endLine": 9
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:15:variable:imports",
+      "type": "VARIABLE",
+      "name": "imports",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 15,
+      "endLine": 15
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:22:variable:interfaces",
+      "type": "VARIABLE",
+      "name": "interfaces",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 22,
+      "endLine": 22
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:29:variable:classes",
+      "type": "VARIABLE",
+      "name": "classes",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 29,
+      "endLine": 29
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:34:variable:methods",
+      "type": "VARIABLE",
+      "name": "methods",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 34,
+      "endLine": 34
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:42:variable:functions",
+      "type": "VARIABLE",
+      "name": "functions",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 42,
+      "endLine": 42
+    },
+    {
+      "id": "symbol:learn-ts-morph/scanner.ts:49:variable:exportss",
+      "type": "VARIABLE",
+      "name": "exportss",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 49,
+      "endLine": 49
+    },
+    {
+      "id": "reference:Project",
+      "type": "REFERENCE",
+      "name": "Project",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 5,
+      "endLine": 5
+    },
+    {
+      "id": "reference:path.join",
+      "type": "REFERENCE",
+      "name": "path.join",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 8,
+      "endLine": 8
+    },
+    {
+      "id": "reference:project.addSourceFileAtPath",
+      "type": "REFERENCE",
+      "name": "project.addSourceFileAtPath",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 9,
+      "endLine": 9
+    },
+    {
+      "id": "reference:sourceFile.getBaseName",
+      "type": "REFERENCE",
+      "name": "sourceFile.getBaseName",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 11,
+      "endLine": 11
+    },
+    {
+      "id": "reference:sourceFile.getImportDeclarations",
+      "type": "REFERENCE",
+      "name": "sourceFile.getImportDeclarations",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 15,
+      "endLine": 15
+    },
+    {
+      "id": "reference:imports.forEach",
+      "type": "REFERENCE",
+      "name": "imports.forEach",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 16,
+      "endLine": 18
+    },
+    {
+      "id": "reference:imp.getModuleSpecifierValue",
+      "type": "REFERENCE",
+      "name": "imp.getModuleSpecifierValue",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 17,
+      "endLine": 17
+    },
+    {
+      "id": "reference:sourceFile.getInterfaces",
+      "type": "REFERENCE",
+      "name": "sourceFile.getInterfaces",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 22,
+      "endLine": 22
+    },
+    {
+      "id": "reference:interfaces.forEach",
+      "type": "REFERENCE",
+      "name": "interfaces.forEach",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 23,
+      "endLine": 25
+    },
+    {
+      "id": "reference:intf.getName",
+      "type": "REFERENCE",
+      "name": "intf.getName",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 24,
+      "endLine": 24
+    },
+    {
+      "id": "reference:intf.getStartLineNumber",
+      "type": "REFERENCE",
+      "name": "intf.getStartLineNumber",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 24,
+      "endLine": 24
+    },
+    {
+      "id": "reference:intf.getEndLineNumber",
+      "type": "REFERENCE",
+      "name": "intf.getEndLineNumber",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 24,
+      "endLine": 24
+    },
+    {
+      "id": "reference:sourceFile.getClasses",
+      "type": "REFERENCE",
+      "name": "sourceFile.getClasses",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 29,
+      "endLine": 29
+    },
+    {
+      "id": "reference:classes.forEach",
+      "type": "REFERENCE",
+      "name": "classes.forEach",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 30,
+      "endLine": 38
+    },
+    {
+      "id": "reference:cls.getName",
+      "type": "REFERENCE",
+      "name": "cls.getName",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 31,
+      "endLine": 31
+    },
+    {
+      "id": "reference:cls.getStartLineNumber",
+      "type": "REFERENCE",
+      "name": "cls.getStartLineNumber",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 31,
+      "endLine": 31
+    },
+    {
+      "id": "reference:cls.getEndLineNumber",
+      "type": "REFERENCE",
+      "name": "cls.getEndLineNumber",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 31,
+      "endLine": 31
+    },
+    {
+      "id": "reference:cls.getMethods",
+      "type": "REFERENCE",
+      "name": "cls.getMethods",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 34,
+      "endLine": 34
+    },
+    {
+      "id": "reference:methods.forEach",
+      "type": "REFERENCE",
+      "name": "methods.forEach",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 35,
+      "endLine": 37
+    },
+    {
+      "id": "reference:method.getName",
+      "type": "REFERENCE",
+      "name": "method.getName",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 36,
+      "endLine": 36
+    },
+    {
+      "id": "reference:method.getStartLineNumber",
+      "type": "REFERENCE",
+      "name": "method.getStartLineNumber",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 36,
+      "endLine": 36
+    },
+    {
+      "id": "reference:method.getEndLineNumber",
+      "type": "REFERENCE",
+      "name": "method.getEndLineNumber",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 36,
+      "endLine": 36
+    },
+    {
+      "id": "reference:sourceFile.getFunctions",
+      "type": "REFERENCE",
+      "name": "sourceFile.getFunctions",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 42,
+      "endLine": 42
+    },
+    {
+      "id": "reference:functions.forEach",
+      "type": "REFERENCE",
+      "name": "functions.forEach",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 43,
+      "endLine": 45
+    },
+    {
+      "id": "reference:func.getName",
+      "type": "REFERENCE",
+      "name": "func.getName",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 44,
+      "endLine": 44
+    },
+    {
+      "id": "reference:func.getStartLineNumber",
+      "type": "REFERENCE",
+      "name": "func.getStartLineNumber",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 44,
+      "endLine": 44
+    },
+    {
+      "id": "reference:func.getEndLineNumber",
+      "type": "REFERENCE",
+      "name": "func.getEndLineNumber",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 44,
+      "endLine": 44
+    },
+    {
+      "id": "reference:sourceFile.getExportedDeclarations",
+      "type": "REFERENCE",
+      "name": "sourceFile.getExportedDeclarations",
+      "filePath": "learn-ts-morph/scanner.ts",
+      "startLine": 49,
+      "endLine": 49
+    },
+    {
+      "id": "file:learn-ts-morph/user.ts",
+      "type": "FILE",
+      "name": "learn-ts-morph/user.ts",
+      "filePath": "learn-ts-morph/user.ts",
+      "startLine": 1,
+      "endLine": 5
+    },
+    {
+      "id": "symbol:learn-ts-morph/user.ts:1:interface:User",
+      "type": "INTERFACE",
+      "name": "User",
+      "filePath": "learn-ts-morph/user.ts",
+      "startLine": 1,
+      "endLine": 4
+    },
+    {
+      "id": "file:src/ast/indexRepository.ts",
+      "type": "FILE",
+      "name": "src/ast/indexRepository.ts",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 1,
+      "endLine": 131
+    },
+    {
+      "id": "module:node:fs",
+      "type": "MODULE",
+      "name": "node:fs",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 1,
+      "endLine": 1
+    },
+    {
+      "id": "module:node:path",
+      "type": "MODULE",
+      "name": "node:path",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 2,
+      "endLine": 2
+    },
+    {
+      "id": "module:./types",
+      "type": "MODULE",
+      "name": "./types",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 3,
+      "endLine": 3
+    },
+    {
+      "id": "module:./TreeSitterLanguage",
+      "type": "MODULE",
+      "name": "./TreeSitterLanguage",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 4,
+      "endLine": 4
+    },
+    {
+      "id": "module:./TreeSitterExtractor",
+      "type": "MODULE",
+      "name": "./TreeSitterExtractor",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 5,
+      "endLine": 5
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:7:variable:skippedDirectories",
+      "type": "VARIABLE",
+      "name": "skippedDirectories",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 7,
+      "endLine": 17
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "type": "FUNCTION",
+      "name": "indexRepository",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 19,
+      "endLine": 108
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:20:variable:root",
+      "type": "VARIABLE",
+      "name": "root",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 20,
+      "endLine": 20
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:25:variable:files",
+      "type": "VARIABLE",
+      "name": "files",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 25,
+      "endLine": 25
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:26:variable:symbols",
+      "type": "VARIABLE",
+      "name": "symbols",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 26,
+      "endLine": 26
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:27:variable:relationships",
+      "type": "VARIABLE",
+      "name": "relationships",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 27,
+      "endLine": 27
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "type": "VARIABLE",
+      "name": "visitDirectory",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 29,
+      "endLine": 54
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:41:variable:absolutePath",
+      "type": "VARIABLE",
+      "name": "absolutePath",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 41,
+      "endLine": 41
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:42:variable:definition",
+      "type": "VARIABLE",
+      "name": "definition",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 42,
+      "endLine": 42
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:47:variable:relativePath",
+      "type": "VARIABLE",
+      "name": "relativePath",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 47,
+      "endLine": 47
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:48:variable:source",
+      "type": "VARIABLE",
+      "name": "source",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 48,
+      "endLine": 48
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:49:variable:extracted",
+      "type": "VARIABLE",
+      "name": "extracted",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 49,
+      "endLine": 49
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:58:variable:declarationsByName",
+      "type": "VARIABLE",
+      "name": "declarationsByName",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 58,
+      "endLine": 58
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:63:variable:matches",
+      "type": "VARIABLE",
+      "name": "matches",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 63,
+      "endLine": 63
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:72:variable:calleeName",
+      "type": "VARIABLE",
+      "name": "calleeName",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 72,
+      "endLine": 72
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:73:variable:matches",
+      "type": "VARIABLE",
+      "name": "matches",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 73,
+      "endLine": 73
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:79:variable:usedReferences",
+      "type": "VARIABLE",
+      "name": "usedReferences",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 79,
+      "endLine": 84
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:85:variable:uniqueSymbols",
+      "type": "VARIABLE",
+      "name": "uniqueSymbols",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 85,
+      "endLine": 85
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:95:variable:uniqueRelationships",
+      "type": "VARIABLE",
+      "name": "uniqueRelationships",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 95,
+      "endLine": 95
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:97:variable:key",
+      "type": "VARIABLE",
+      "name": "key",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 97,
+      "endLine": 97
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "type": "FUNCTION",
+      "name": "main",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 110,
+      "endLine": 121
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:111:variable:repositoryPath",
+      "type": "VARIABLE",
+      "name": "repositoryPath",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 111,
+      "endLine": 111
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:112:variable:outputPath",
+      "type": "VARIABLE",
+      "name": "outputPath",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 112,
+      "endLine": 112
+    },
+    {
+      "id": "symbol:src/ast/indexRepository.ts:113:variable:output",
+      "type": "VARIABLE",
+      "name": "output",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 113,
+      "endLine": 113
+    },
+    {
+      "id": "reference:Set",
+      "type": "REFERENCE",
+      "name": "Set",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 7,
+      "endLine": 17
+    },
+    {
+      "id": "reference:path.resolve",
+      "type": "REFERENCE",
+      "name": "path.resolve",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 20,
+      "endLine": 20
+    },
+    {
+      "id": "reference:fs.existsSync",
+      "type": "REFERENCE",
+      "name": "fs.existsSync",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 21,
+      "endLine": 21
+    },
+    {
+      "id": "reference:fs.statSync(root).isDirectory",
+      "type": "REFERENCE",
+      "name": "fs.statSync(root).isDirectory",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 21,
+      "endLine": 21
+    },
+    {
+      "id": "reference:fs.statSync",
+      "type": "REFERENCE",
+      "name": "fs.statSync",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 21,
+      "endLine": 21
+    },
+    {
+      "id": "reference:Error",
+      "type": "REFERENCE",
+      "name": "Error",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 22,
+      "endLine": 22
+    },
+    {
+      "id": "reference:fs.readdirSync",
+      "type": "REFERENCE",
+      "name": "fs.readdirSync",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 30,
+      "endLine": 30
+    },
+    {
+      "id": "reference:entry.isDirectory",
+      "type": "REFERENCE",
+      "name": "entry.isDirectory",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 31,
+      "endLine": 31
+    },
+    {
+      "id": "reference:skippedDirectories.has",
+      "type": "REFERENCE",
+      "name": "skippedDirectories.has",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 32,
+      "endLine": 32
+    },
+    {
+      "id": "reference:entry.isFile",
+      "type": "REFERENCE",
+      "name": "entry.isFile",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 37,
+      "endLine": 37
+    },
+    {
+      "id": "reference:path.relative(root, absolutePath).split(path.sep).join",
+      "type": "REFERENCE",
+      "name": "path.relative(root, absolutePath).split(path.sep).join",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 47,
+      "endLine": 47
+    },
+    {
+      "id": "reference:path.relative(root, absolutePath).split",
+      "type": "REFERENCE",
+      "name": "path.relative(root, absolutePath).split",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 47,
+      "endLine": 47
+    },
+    {
+      "id": "reference:path.relative",
+      "type": "REFERENCE",
+      "name": "path.relative",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 47,
+      "endLine": 47
+    },
+    {
+      "id": "reference:fs.readFileSync",
+      "type": "REFERENCE",
+      "name": "fs.readFileSync",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 48,
+      "endLine": 48
+    },
+    {
+      "id": "reference:files.push",
+      "type": "REFERENCE",
+      "name": "files.push",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 50,
+      "endLine": 50
+    },
+    {
+      "id": "reference:symbols.push",
+      "type": "REFERENCE",
+      "name": "symbols.push",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 51,
+      "endLine": 51
+    },
+    {
+      "id": "reference:relationships.push",
+      "type": "REFERENCE",
+      "name": "relationships.push",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 52,
+      "endLine": 52
+    },
+    {
+      "id": "reference:Map",
+      "type": "REFERENCE",
+      "name": "Map",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 58,
+      "endLine": 58
+    },
+    {
+      "id": "reference:declarationsByName.get",
+      "type": "REFERENCE",
+      "name": "declarationsByName.get",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 63,
+      "endLine": 63
+    },
+    {
+      "id": "reference:matches.push",
+      "type": "REFERENCE",
+      "name": "matches.push",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 64,
+      "endLine": 64
+    },
+    {
+      "id": "reference:declarationsByName.set",
+      "type": "REFERENCE",
+      "name": "declarationsByName.set",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 65,
+      "endLine": 65
+    },
+    {
+      "id": "reference:relationship.to.split('.').pop",
+      "type": "REFERENCE",
+      "name": "relationship.to.split('.').pop",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 72,
+      "endLine": 72
+    },
+    {
+      "id": "reference:relationship.to.split",
+      "type": "REFERENCE",
+      "name": "relationship.to.split",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 72,
+      "endLine": 72
+    },
+    {
+      "id": "reference:relationships\r\n      .filter((relationship) => relationship.relation === 'CALLS')\r\n      .map((relationship) => relationship.toId)\r\n      .filter",
+      "type": "REFERENCE",
+      "name": "relationships\r\n      .filter((relationship) => relationship.relation === 'CALLS')\r\n      .map((relationship) => relationship.toId)\r\n      .filter",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 80,
+      "endLine": 83
+    },
+    {
+      "id": "reference:relationships\r\n      .filter((relationship) => relationship.relation === 'CALLS')\r\n      .map",
+      "type": "REFERENCE",
+      "name": "relationships\r\n      .filter((relationship) => relationship.relation === 'CALLS')\r\n      .map",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 80,
+      "endLine": 82
+    },
+    {
+      "id": "reference:relationships\r\n      .filter",
+      "type": "REFERENCE",
+      "name": "relationships\r\n      .filter",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 80,
+      "endLine": 81
+    },
+    {
+      "id": "reference:id.startsWith",
+      "type": "REFERENCE",
+      "name": "id.startsWith",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 83,
+      "endLine": 83
+    },
+    {
+      "id": "reference:usedReferences.has",
+      "type": "REFERENCE",
+      "name": "usedReferences.has",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 87,
+      "endLine": 87
+    },
+    {
+      "id": "reference:uniqueSymbols.has",
+      "type": "REFERENCE",
+      "name": "uniqueSymbols.has",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 90,
+      "endLine": 90
+    },
+    {
+      "id": "reference:uniqueSymbols.set",
+      "type": "REFERENCE",
+      "name": "uniqueSymbols.set",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 91,
+      "endLine": 91
+    },
+    {
+      "id": "reference:uniqueRelationships.has",
+      "type": "REFERENCE",
+      "name": "uniqueRelationships.has",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 98,
+      "endLine": 98
+    },
+    {
+      "id": "reference:uniqueRelationships.set",
+      "type": "REFERENCE",
+      "name": "uniqueRelationships.set",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 99,
+      "endLine": 99
+    },
+    {
+      "id": "reference:[...new Set(files)].sort",
+      "type": "REFERENCE",
+      "name": "[...new Set(files)].sort",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 104,
+      "endLine": 104
+    },
+    {
+      "id": "reference:uniqueSymbols.values",
+      "type": "REFERENCE",
+      "name": "uniqueSymbols.values",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 105,
+      "endLine": 105
+    },
+    {
+      "id": "reference:uniqueRelationships.values",
+      "type": "REFERENCE",
+      "name": "uniqueRelationships.values",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 106,
+      "endLine": 106
+    },
+    {
+      "id": "reference:process.cwd",
+      "type": "REFERENCE",
+      "name": "process.cwd",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 111,
+      "endLine": 111
+    },
+    {
+      "id": "reference:fs.mkdirSync",
+      "type": "REFERENCE",
+      "name": "fs.mkdirSync",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 115,
+      "endLine": 115
+    },
+    {
+      "id": "reference:path.dirname",
+      "type": "REFERENCE",
+      "name": "path.dirname",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 115,
+      "endLine": 115
+    },
+    {
+      "id": "reference:fs.writeFileSync",
+      "type": "REFERENCE",
+      "name": "fs.writeFileSync",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 116,
+      "endLine": 116
+    },
+    {
+      "id": "reference:JSON.stringify",
+      "type": "REFERENCE",
+      "name": "JSON.stringify",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 116,
+      "endLine": 116
+    },
+    {
+      "id": "reference:console.error",
+      "type": "REFERENCE",
+      "name": "console.error",
+      "filePath": "src/ast/indexRepository.ts",
+      "startLine": 127,
+      "endLine": 127
+    },
+    {
+      "id": "file:src/ast/TreeSitterExtractor.test.ts",
+      "type": "FILE",
+      "name": "src/ast/TreeSitterExtractor.test.ts",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 1,
+      "endLine": 80
+    },
+    {
+      "id": "module:node:assert/strict",
+      "type": "MODULE",
+      "name": "node:assert/strict",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 1,
+      "endLine": 1
+    },
+    {
+      "id": "module:node:os",
+      "type": "MODULE",
+      "name": "node:os",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 3,
+      "endLine": 3
+    },
+    {
+      "id": "module:node:test",
+      "type": "MODULE",
+      "name": "node:test",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 5,
+      "endLine": 5
+    },
+    {
+      "id": "module:./indexRepository",
+      "type": "MODULE",
+      "name": "./indexRepository",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 6,
+      "endLine": 6
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.test.ts:9:variable:repository",
+      "type": "VARIABLE",
+      "name": "repository",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 9,
+      "endLine": 9
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.test.ts:10:variable:samples",
+      "type": "VARIABLE",
+      "name": "samples",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 10,
+      "endLine": 41
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.test.ts:48:variable:graph",
+      "type": "VARIABLE",
+      "name": "graph",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 48,
+      "endLine": 48
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.test.ts:49:variable:names",
+      "type": "VARIABLE",
+      "name": "names",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 49,
+      "endLine": 49
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.test.ts:50:variable:languages",
+      "type": "VARIABLE",
+      "name": "languages",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 50,
+      "endLine": 54
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.test.ts:69:variable:symbolIds",
+      "type": "VARIABLE",
+      "name": "symbolIds",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 69,
+      "endLine": 69
+    },
+    {
+      "id": "reference:test",
+      "type": "REFERENCE",
+      "name": "test",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 8,
+      "endLine": 79
+    },
+    {
+      "id": "reference:fs.mkdtempSync",
+      "type": "REFERENCE",
+      "name": "fs.mkdtempSync",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 9,
+      "endLine": 9
+    },
+    {
+      "id": "reference:os.tmpdir",
+      "type": "REFERENCE",
+      "name": "os.tmpdir",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 9,
+      "endLine": 9
+    },
+    {
+      "id": "reference:Object.entries",
+      "type": "REFERENCE",
+      "name": "Object.entries",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 44,
+      "endLine": 44
+    },
+    {
+      "id": "reference:graph.symbols.map",
+      "type": "REFERENCE",
+      "name": "graph.symbols.map",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 49,
+      "endLine": 49
+    },
+    {
+      "id": "reference:graph.symbols\r\n        .map((symbol) => symbol.language)\r\n        .filter",
+      "type": "REFERENCE",
+      "name": "graph.symbols\r\n        .map((symbol) => symbol.language)\r\n        .filter",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 51,
+      "endLine": 53
+    },
+    {
+      "id": "reference:graph.symbols\r\n        .map",
+      "type": "REFERENCE",
+      "name": "graph.symbols\r\n        .map",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 51,
+      "endLine": 52
+    },
+    {
+      "id": "reference:Boolean",
+      "type": "REFERENCE",
+      "name": "Boolean",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 53,
+      "endLine": 53
+    },
+    {
+      "id": "reference:assert.equal",
+      "type": "REFERENCE",
+      "name": "assert.equal",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 56,
+      "endLine": 56
+    },
+    {
+      "id": "reference:graph.files.includes",
+      "type": "REFERENCE",
+      "name": "graph.files.includes",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 57,
+      "endLine": 57
+    },
+    {
+      "id": "reference:names.has",
+      "type": "REFERENCE",
+      "name": "names.has",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 58,
+      "endLine": 58
+    },
+    {
+      "id": "reference:assert.deepEqual",
+      "type": "REFERENCE",
+      "name": "assert.deepEqual",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 63,
+      "endLine": 66
+    },
+    {
+      "id": "reference:[...languages].sort",
+      "type": "REFERENCE",
+      "name": "[...languages].sort",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 64,
+      "endLine": 64
+    },
+    {
+      "id": "reference:graph.relationships.some",
+      "type": "REFERENCE",
+      "name": "graph.relationships.some",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 67,
+      "endLine": 67
+    },
+    {
+      "id": "reference:graph.relationships.every",
+      "type": "REFERENCE",
+      "name": "graph.relationships.every",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 71,
+      "endLine": 73
+    },
+    {
+      "id": "reference:symbolIds.has",
+      "type": "REFERENCE",
+      "name": "symbolIds.has",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 72,
+      "endLine": 72
+    },
+    {
+      "id": "reference:fs.rmSync",
+      "type": "REFERENCE",
+      "name": "fs.rmSync",
+      "filePath": "src/ast/TreeSitterExtractor.test.ts",
+      "startLine": 77,
+      "endLine": 77
+    },
+    {
+      "id": "file:src/ast/TreeSitterExtractor.ts",
+      "type": "FILE",
+      "name": "src/ast/TreeSitterExtractor.ts",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 1,
+      "endLine": 293
+    },
+    {
+      "id": "module:tree-sitter",
+      "type": "MODULE",
+      "name": "tree-sitter",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 1,
+      "endLine": 1
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:11:interface:GrammarModule",
+      "type": "INTERFACE",
+      "name": "GrammarModule",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 11,
+      "endLine": 15
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:17:variable:identifierTypes",
+      "type": "VARIABLE",
+      "name": "identifierTypes",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 17,
+      "endLine": 23
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:25:variable:classTypes",
+      "type": "VARIABLE",
+      "name": "classTypes",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 25,
+      "endLine": 32
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "type": "CLASS",
+      "name": "TreeSitterExtractor",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 34,
+      "endLine": 292
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "type": "METHOD",
+      "name": "extractFrom",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 35,
+      "endLine": 138
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:40:variable:parser",
+      "type": "VARIABLE",
+      "name": "parser",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 40,
+      "endLine": 40
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:41:variable:grammarPackage",
+      "type": "VARIABLE",
+      "name": "grammarPackage",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 41,
+      "endLine": 41
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:42:variable:grammar",
+      "type": "VARIABLE",
+      "name": "grammar",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 42,
+      "endLine": 42
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:45:variable:tree",
+      "type": "VARIABLE",
+      "name": "tree",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 45,
+      "endLine": 45
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:46:variable:fileId",
+      "type": "VARIABLE",
+      "name": "fileId",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 46,
+      "endLine": 46
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:47:variable:lineCount",
+      "type": "VARIABLE",
+      "name": "lineCount",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 47,
+      "endLine": 47
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:48:variable:fileSymbol",
+      "type": "VARIABLE",
+      "name": "fileSymbol",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 48,
+      "endLine": 56
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:57:variable:symbols",
+      "type": "VARIABLE",
+      "name": "symbols",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 57,
+      "endLine": 57
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:58:variable:relationships",
+      "type": "VARIABLE",
+      "name": "relationships",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 58,
+      "endLine": 58
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:59:variable:referenceSymbols",
+      "type": "VARIABLE",
+      "name": "referenceSymbols",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 59,
+      "endLine": 59
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "type": "VARIABLE",
+      "name": "visit",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 61,
+      "endLine": 133
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:62:variable:currentContainer",
+      "type": "VARIABLE",
+      "name": "currentContainer",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 62,
+      "endLine": 62
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:63:variable:symbolType",
+      "type": "VARIABLE",
+      "name": "symbolType",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 63,
+      "endLine": 63
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:66:variable:name",
+      "type": "VARIABLE",
+      "name": "name",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 66,
+      "endLine": 66
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:68:variable:type",
+      "type": "VARIABLE",
+      "name": "type",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 68,
+      "endLine": 68
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:69:variable:symbol",
+      "type": "VARIABLE",
+      "name": "symbol",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 69,
+      "endLine": 69
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:83:variable:moduleName",
+      "type": "VARIABLE",
+      "name": "moduleName",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 83,
+      "endLine": 83
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:85:variable:moduleId",
+      "type": "VARIABLE",
+      "name": "moduleId",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 85,
+      "endLine": 85
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:106:variable:callee",
+      "type": "VARIABLE",
+      "name": "callee",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 106,
+      "endLine": 106
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:108:variable:referenceId",
+      "type": "VARIABLE",
+      "name": "referenceId",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 108,
+      "endLine": 108
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:140:method:getGrammar",
+      "type": "METHOD",
+      "name": "getGrammar",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 140,
+      "endLine": 160
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:146:variable:grammar",
+      "type": "VARIABLE",
+      "name": "grammar",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 146,
+      "endLine": 148
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:155:variable:grammar",
+      "type": "VARIABLE",
+      "name": "grammar",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 155,
+      "endLine": 155
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:162:method:getNodeName",
+      "type": "METHOD",
+      "name": "getNodeName",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 162,
+      "endLine": 175
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:164:variable:field",
+      "type": "VARIABLE",
+      "name": "field",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 164,
+      "endLine": 164
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:166:variable:identifier",
+      "type": "VARIABLE",
+      "name": "identifier",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 166,
+      "endLine": 166
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:173:variable:identifier",
+      "type": "VARIABLE",
+      "name": "identifier",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 173,
+      "endLine": 173
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:177:method:findIdentifier",
+      "type": "METHOD",
+      "name": "findIdentifier",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 177,
+      "endLine": 188
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:182:variable:identifier",
+      "type": "VARIABLE",
+      "name": "identifier",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 182,
+      "endLine": 182
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:190:method:getImportTarget",
+      "type": "METHOD",
+      "name": "getImportTarget",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 190,
+      "endLine": 207
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:192:variable:field",
+      "type": "VARIABLE",
+      "name": "field",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 192,
+      "endLine": 192
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:204:variable:rawText",
+      "type": "VARIABLE",
+      "name": "rawText",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 204,
+      "endLine": 204
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:205:variable:quotedTarget",
+      "type": "VARIABLE",
+      "name": "quotedTarget",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 205,
+      "endLine": 205
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:209:method:getCallName",
+      "type": "METHOD",
+      "name": "getCallName",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 209,
+      "endLine": 219
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:210:variable:callee",
+      "type": "VARIABLE",
+      "name": "callee",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 210,
+      "endLine": 213
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:221:method:createSymbol",
+      "type": "METHOD",
+      "name": "createSymbol",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 221,
+      "endLine": 239
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:228:variable:startLine",
+      "type": "VARIABLE",
+      "name": "startLine",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 228,
+      "endLine": 228
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:241:method:getParameters",
+      "type": "METHOD",
+      "name": "getParameters",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 241,
+      "endLine": 262
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:242:variable:parameters",
+      "type": "VARIABLE",
+      "name": "parameters",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 242,
+      "endLine": 244
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:249:variable:names",
+      "type": "VARIABLE",
+      "name": "names",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 249,
+      "endLine": 259
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:251:variable:nameField",
+      "type": "VARIABLE",
+      "name": "nameField",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 251,
+      "endLine": 253
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:254:variable:identifier",
+      "type": "VARIABLE",
+      "name": "identifier",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 254,
+      "endLine": 256
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:264:method:refineSymbolType",
+      "type": "METHOD",
+      "name": "refineSymbolType",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 264,
+      "endLine": 276
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:278:method:hasClassAncestor",
+      "type": "METHOD",
+      "name": "hasClassAncestor",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 278,
+      "endLine": 287
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:279:variable:parent",
+      "type": "VARIABLE",
+      "name": "parent",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 279,
+      "endLine": 279
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterExtractor.ts:289:method:removeQuotes",
+      "type": "METHOD",
+      "name": "removeQuotes",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 289,
+      "endLine": 291
+    },
+    {
+      "id": "reference:Parser",
+      "type": "REFERENCE",
+      "name": "Parser",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 40,
+      "endLine": 40
+    },
+    {
+      "id": "reference:require",
+      "type": "REFERENCE",
+      "name": "require",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 41,
+      "endLine": 41
+    },
+    {
+      "id": "reference:parser.setLanguage",
+      "type": "REFERENCE",
+      "name": "parser.setLanguage",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 43,
+      "endLine": 43
+    },
+    {
+      "id": "reference:parser.parse",
+      "type": "REFERENCE",
+      "name": "parser.parse",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 45,
+      "endLine": 45
+    },
+    {
+      "id": "reference:source.split",
+      "type": "REFERENCE",
+      "name": "source.split",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 47,
+      "endLine": 47
+    },
+    {
+      "id": "reference:definition.imports.includes",
+      "type": "REFERENCE",
+      "name": "definition.imports.includes",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 82,
+      "endLine": 82
+    },
+    {
+      "id": "reference:definition.calls.includes",
+      "type": "REFERENCE",
+      "name": "definition.calls.includes",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 105,
+      "endLine": 105
+    },
+    {
+      "id": "reference:referenceSymbols.has",
+      "type": "REFERENCE",
+      "name": "referenceSymbols.has",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 109,
+      "endLine": 109
+    },
+    {
+      "id": "reference:referenceSymbols.set",
+      "type": "REFERENCE",
+      "name": "referenceSymbols.set",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 110,
+      "endLine": 118
+    },
+    {
+      "id": "reference:referenceSymbols.values",
+      "type": "REFERENCE",
+      "name": "referenceSymbols.values",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 136,
+      "endLine": 136
+    },
+    {
+      "id": "reference:file.toLowerCase().endsWith",
+      "type": "REFERENCE",
+      "name": "file.toLowerCase().endsWith",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 146,
+      "endLine": 146
+    },
+    {
+      "id": "reference:file.toLowerCase",
+      "type": "REFERENCE",
+      "name": "file.toLowerCase",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 146,
+      "endLine": 146
+    },
+    {
+      "id": "reference:node.childForFieldName",
+      "type": "REFERENCE",
+      "name": "node.childForFieldName",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 164,
+      "endLine": 164
+    },
+    {
+      "id": "reference:identifierTypes.has",
+      "type": "REFERENCE",
+      "name": "identifierTypes.has",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 178,
+      "endLine": 178
+    },
+    {
+      "id": "reference:rawText.match",
+      "type": "REFERENCE",
+      "name": "rawText.match",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 205,
+      "endLine": 205
+    },
+    {
+      "id": "reference:callee.text.trim",
+      "type": "REFERENCE",
+      "name": "callee.text.trim",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 218,
+      "endLine": 218
+    },
+    {
+      "id": "reference:parameters.namedChildren\r\n      .map((parameter) => {\r\n        const nameField =\r\n          parameter.childForFieldName('name') ??\r\n          parameter.childForFieldName('pattern');\r\n        const identifier = nameField\r\n          ? this.findIdentifier(nameField)\r\n          : this.findIdentifier(parameter);\r\n        return identifier?.text;\r\n      })\r\n      .filter",
+      "type": "REFERENCE",
+      "name": "parameters.namedChildren\r\n      .map((parameter) => {\r\n        const nameField =\r\n          parameter.childForFieldName('name') ??\r\n          parameter.childForFieldName('pattern');\r\n        const identifier = nameField\r\n          ? this.findIdentifier(nameField)\r\n          : this.findIdentifier(parameter);\r\n        return identifier?.text;\r\n      })\r\n      .filter",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 249,
+      "endLine": 259
+    },
+    {
+      "id": "reference:parameters.namedChildren\r\n      .map",
+      "type": "REFERENCE",
+      "name": "parameters.namedChildren\r\n      .map",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 249,
+      "endLine": 258
+    },
+    {
+      "id": "reference:parameter.childForFieldName",
+      "type": "REFERENCE",
+      "name": "parameter.childForFieldName",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 252,
+      "endLine": 252
+    },
+    {
+      "id": "reference:classTypes.has",
+      "type": "REFERENCE",
+      "name": "classTypes.has",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 281,
+      "endLine": 281
+    },
+    {
+      "id": "reference:value.replace(/^[\"'`]|[\"'`]$/g, '').replace",
+      "type": "REFERENCE",
+      "name": "value.replace(/^[\"'`]|[\"'`]$/g, '').replace",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 290,
+      "endLine": 290
+    },
+    {
+      "id": "reference:value.replace",
+      "type": "REFERENCE",
+      "name": "value.replace",
+      "filePath": "src/ast/TreeSitterExtractor.ts",
+      "startLine": 290,
+      "endLine": 290
+    },
+    {
+      "id": "file:src/ast/TreeSitterLanguage.ts",
+      "type": "FILE",
+      "name": "src/ast/TreeSitterLanguage.ts",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 1,
+      "endLine": 127
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterLanguage.ts:3:interface:LanguageDefinition",
+      "type": "INTERFACE",
+      "name": "LanguageDefinition",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 3,
+      "endLine": 10
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterLanguage.ts:12:variable:languageDefinitions",
+      "type": "VARIABLE",
+      "name": "languageDefinitions",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 12,
+      "endLine": 115
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterLanguage.ts:117:variable:definitionByExtension",
+      "type": "VARIABLE",
+      "name": "definitionByExtension",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 117,
+      "endLine": 121
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterLanguage.ts:123:function:languageForPath",
+      "type": "FUNCTION",
+      "name": "languageForPath",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 123,
+      "endLine": 126
+    },
+    {
+      "id": "symbol:src/ast/TreeSitterLanguage.ts:124:variable:extension",
+      "type": "VARIABLE",
+      "name": "extension",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 124,
+      "endLine": 124
+    },
+    {
+      "id": "reference:languageDefinitions.flatMap",
+      "type": "REFERENCE",
+      "name": "languageDefinitions.flatMap",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 118,
+      "endLine": 120
+    },
+    {
+      "id": "reference:definition.extensions.map",
+      "type": "REFERENCE",
+      "name": "definition.extensions.map",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 119,
+      "endLine": 119
+    },
+    {
+      "id": "reference:filePath.slice(filePath.lastIndexOf('.')).toLowerCase",
+      "type": "REFERENCE",
+      "name": "filePath.slice(filePath.lastIndexOf('.')).toLowerCase",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 124,
+      "endLine": 124
+    },
+    {
+      "id": "reference:filePath.slice",
+      "type": "REFERENCE",
+      "name": "filePath.slice",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 124,
+      "endLine": 124
+    },
+    {
+      "id": "reference:filePath.lastIndexOf",
+      "type": "REFERENCE",
+      "name": "filePath.lastIndexOf",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 124,
+      "endLine": 124
+    },
+    {
+      "id": "reference:definitionByExtension.get",
+      "type": "REFERENCE",
+      "name": "definitionByExtension.get",
+      "filePath": "src/ast/TreeSitterLanguage.ts",
+      "startLine": 125,
+      "endLine": 125
+    },
+    {
+      "id": "file:src/ast/types.ts",
+      "type": "FILE",
+      "name": "src/ast/types.ts",
+      "filePath": "src/ast/types.ts",
+      "startLine": 1,
+      "endLine": 50
+    },
+    {
+      "id": "symbol:src/ast/types.ts:1:type:SupportedLanguage",
+      "type": "TYPE",
+      "name": "SupportedLanguage",
+      "filePath": "src/ast/types.ts",
+      "startLine": 1,
+      "endLine": 8
+    },
+    {
+      "id": "symbol:src/ast/types.ts:10:type:SymbolType",
+      "type": "TYPE",
+      "name": "SymbolType",
+      "filePath": "src/ast/types.ts",
+      "startLine": 10,
+      "endLine": 23
+    },
+    {
+      "id": "symbol:src/ast/types.ts:25:interface:ExtractedSymbol",
+      "type": "INTERFACE",
+      "name": "ExtractedSymbol",
+      "filePath": "src/ast/types.ts",
+      "startLine": 25,
+      "endLine": 35
+    },
+    {
+      "id": "symbol:src/ast/types.ts:37:interface:ExtractedRelationship",
+      "type": "INTERFACE",
+      "name": "ExtractedRelationship",
+      "filePath": "src/ast/types.ts",
+      "startLine": 37,
+      "endLine": 43
+    },
+    {
+      "id": "symbol:src/ast/types.ts:45:interface:StandardizedOutput",
+      "type": "INTERFACE",
+      "name": "StandardizedOutput",
+      "filePath": "src/ast/types.ts",
+      "startLine": 45,
+      "endLine": 49
+    }
+  ],
+  "edges": [
+    {
+      "sourceId": "file:learn-ts-morph/sample.ts",
+      "targetId": "module:./user",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/sample.ts",
+      "targetId": "symbol:learn-ts-morph/sample.ts:3:interface:AuthContext",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/sample.ts",
+      "targetId": "symbol:learn-ts-morph/sample.ts:8:class:AuthService",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/sample.ts:8:class:AuthService",
+      "targetId": "symbol:learn-ts-morph/sample.ts:9:method:constructor",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/sample.ts:8:class:AuthService",
+      "targetId": "symbol:learn-ts-morph/sample.ts:11:method:login",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/sample.ts:11:method:login",
+      "targetId": "reference:console.log",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/sample.ts:11:method:login",
+      "targetId": "symbol:learn-ts-morph/sample.ts:16:method:verifyCredentials",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/sample.ts:8:class:AuthService",
+      "targetId": "symbol:learn-ts-morph/sample.ts:16:method:verifyCredentials",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/sample.ts",
+      "targetId": "symbol:learn-ts-morph/sample.ts:21:function:generateToken",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "module:ts-morph",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "module:path",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:5:variable:project",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:5:variable:project",
+      "targetId": "reference:Project",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:8:variable:sampleFilePath",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:8:variable:sampleFilePath",
+      "targetId": "reference:path.join",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:9:variable:sourceFile",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:9:variable:sourceFile",
+      "targetId": "reference:project.addSourceFileAtPath",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:console.log",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:sourceFile.getBaseName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:15:variable:imports",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:15:variable:imports",
+      "targetId": "reference:sourceFile.getImportDeclarations",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:imports.forEach",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:imp.getModuleSpecifierValue",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:22:variable:interfaces",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:22:variable:interfaces",
+      "targetId": "reference:sourceFile.getInterfaces",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:interfaces.forEach",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:intf.getName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:intf.getStartLineNumber",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:intf.getEndLineNumber",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:29:variable:classes",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:29:variable:classes",
+      "targetId": "reference:sourceFile.getClasses",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:classes.forEach",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:cls.getName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:cls.getStartLineNumber",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:cls.getEndLineNumber",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:34:variable:methods",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:34:variable:methods",
+      "targetId": "reference:cls.getMethods",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:methods.forEach",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:method.getName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:method.getStartLineNumber",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:method.getEndLineNumber",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:42:variable:functions",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:42:variable:functions",
+      "targetId": "reference:sourceFile.getFunctions",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:functions.forEach",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:func.getName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:func.getStartLineNumber",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "reference:func.getEndLineNumber",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/scanner.ts",
+      "targetId": "symbol:learn-ts-morph/scanner.ts:49:variable:exportss",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:learn-ts-morph/scanner.ts:49:variable:exportss",
+      "targetId": "reference:sourceFile.getExportedDeclarations",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:learn-ts-morph/user.ts",
+      "targetId": "symbol:learn-ts-morph/user.ts:1:interface:User",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "module:node:fs",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "module:node:path",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "module:./types",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "module:./TreeSitterLanguage",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "module:./TreeSitterExtractor",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "symbol:src/ast/indexRepository.ts:7:variable:skippedDirectories",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:7:variable:skippedDirectories",
+      "targetId": "reference:Set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:20:variable:root",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:20:variable:root",
+      "targetId": "reference:path.resolve",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:fs.existsSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:fs.statSync(root).isDirectory",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:fs.statSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:Error",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:25:variable:files",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:26:variable:symbols",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:27:variable:relationships",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "reference:fs.readdirSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "reference:entry.isDirectory",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "reference:skippedDirectories.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "reference:path.join",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "reference:entry.isFile",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "symbol:src/ast/indexRepository.ts:41:variable:absolutePath",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:41:variable:absolutePath",
+      "targetId": "reference:path.join",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "symbol:src/ast/indexRepository.ts:42:variable:definition",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:42:variable:definition",
+      "targetId": "symbol:src/ast/TreeSitterLanguage.ts:123:function:languageForPath",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "symbol:src/ast/indexRepository.ts:47:variable:relativePath",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:47:variable:relativePath",
+      "targetId": "reference:path.relative(root, absolutePath).split(path.sep).join",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:47:variable:relativePath",
+      "targetId": "reference:path.relative(root, absolutePath).split",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:47:variable:relativePath",
+      "targetId": "reference:path.relative",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "symbol:src/ast/indexRepository.ts:48:variable:source",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:48:variable:source",
+      "targetId": "reference:fs.readFileSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "symbol:src/ast/indexRepository.ts:49:variable:extracted",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:49:variable:extracted",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "reference:files.push",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "reference:symbols.push",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "targetId": "reference:relationships.push",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:29:variable:visitDirectory",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:58:variable:declarationsByName",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:58:variable:declarationsByName",
+      "targetId": "reference:Map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:63:variable:matches",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:63:variable:matches",
+      "targetId": "reference:declarationsByName.get",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:matches.push",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:declarationsByName.set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:72:variable:calleeName",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:72:variable:calleeName",
+      "targetId": "reference:relationship.to.split('.').pop",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:72:variable:calleeName",
+      "targetId": "reference:relationship.to.split",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:73:variable:matches",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:73:variable:matches",
+      "targetId": "reference:declarationsByName.get",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:79:variable:usedReferences",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:79:variable:usedReferences",
+      "targetId": "reference:Set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:79:variable:usedReferences",
+      "targetId": "reference:relationships\r\n      .filter((relationship) => relationship.relation === 'CALLS')\r\n      .map((relationship) => relationship.toId)\r\n      .filter",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:79:variable:usedReferences",
+      "targetId": "reference:relationships\r\n      .filter((relationship) => relationship.relation === 'CALLS')\r\n      .map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:79:variable:usedReferences",
+      "targetId": "reference:relationships\r\n      .filter",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:79:variable:usedReferences",
+      "targetId": "reference:id.startsWith",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:85:variable:uniqueSymbols",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:85:variable:uniqueSymbols",
+      "targetId": "reference:Map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:usedReferences.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:uniqueSymbols.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:uniqueSymbols.set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:95:variable:uniqueRelationships",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:95:variable:uniqueRelationships",
+      "targetId": "reference:Map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "symbol:src/ast/indexRepository.ts:97:variable:key",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:uniqueRelationships.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:uniqueRelationships.set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:[...new Set(files)].sort",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:Set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:uniqueSymbols.values",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "targetId": "reference:uniqueRelationships.values",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "targetId": "symbol:src/ast/indexRepository.ts:111:variable:repositoryPath",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:111:variable:repositoryPath",
+      "targetId": "reference:process.cwd",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "targetId": "symbol:src/ast/indexRepository.ts:112:variable:outputPath",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:112:variable:outputPath",
+      "targetId": "reference:path.join",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:112:variable:outputPath",
+      "targetId": "reference:process.cwd",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "targetId": "symbol:src/ast/indexRepository.ts:113:variable:output",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:113:variable:output",
+      "targetId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "targetId": "reference:fs.mkdirSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "targetId": "reference:path.dirname",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "targetId": "reference:fs.writeFileSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "targetId": "reference:JSON.stringify",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "targetId": "reference:console.log",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "symbol:src/ast/indexRepository.ts:110:function:main",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/indexRepository.ts",
+      "targetId": "reference:console.error",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "module:node:assert/strict",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "module:node:fs",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "module:node:os",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "module:node:path",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "module:node:test",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "module:./indexRepository",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:test",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.test.ts:9:variable:repository",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:9:variable:repository",
+      "targetId": "reference:fs.mkdtempSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:9:variable:repository",
+      "targetId": "reference:path.join",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:9:variable:repository",
+      "targetId": "reference:os.tmpdir",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.test.ts:10:variable:samples",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:Object.entries",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:fs.writeFileSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:path.join",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.test.ts:48:variable:graph",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:48:variable:graph",
+      "targetId": "symbol:src/ast/indexRepository.ts:19:function:indexRepository",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.test.ts:49:variable:names",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:49:variable:names",
+      "targetId": "reference:Set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:49:variable:names",
+      "targetId": "reference:graph.symbols.map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.test.ts:50:variable:languages",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:50:variable:languages",
+      "targetId": "reference:Set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:50:variable:languages",
+      "targetId": "reference:graph.symbols\r\n        .map((symbol) => symbol.language)\r\n        .filter",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:50:variable:languages",
+      "targetId": "reference:graph.symbols\r\n        .map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:50:variable:languages",
+      "targetId": "reference:Boolean",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:assert.equal",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:graph.files.includes",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:names.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:assert.deepEqual",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:[...languages].sort",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:graph.relationships.some",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.test.ts:69:variable:symbolIds",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:69:variable:symbolIds",
+      "targetId": "reference:Set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.test.ts:69:variable:symbolIds",
+      "targetId": "reference:graph.symbols.map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:graph.relationships.every",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:symbolIds.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.test.ts",
+      "targetId": "reference:fs.rmSync",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.ts",
+      "targetId": "module:tree-sitter",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.ts",
+      "targetId": "module:./types",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.ts",
+      "targetId": "module:./TreeSitterLanguage",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:11:interface:GrammarModule",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:17:variable:identifierTypes",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:17:variable:identifierTypes",
+      "targetId": "reference:Set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:25:variable:classTypes",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:25:variable:classTypes",
+      "targetId": "reference:Set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterExtractor.ts",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:40:variable:parser",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:40:variable:parser",
+      "targetId": "reference:Parser",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:41:variable:grammarPackage",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:41:variable:grammarPackage",
+      "targetId": "reference:require",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:42:variable:grammar",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:42:variable:grammar",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:140:method:getGrammar",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "reference:parser.setLanguage",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:45:variable:tree",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:45:variable:tree",
+      "targetId": "reference:parser.parse",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:46:variable:fileId",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:47:variable:lineCount",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:47:variable:lineCount",
+      "targetId": "reference:source.split",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:48:variable:fileSymbol",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:57:variable:symbols",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:58:variable:relationships",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:59:variable:referenceSymbols",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:59:variable:referenceSymbols",
+      "targetId": "reference:Map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:62:variable:currentContainer",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:63:variable:symbolType",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:66:variable:name",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:66:variable:name",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:162:method:getNodeName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:68:variable:type",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:68:variable:type",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:264:method:refineSymbolType",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:69:variable:symbol",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:69:variable:symbol",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:221:method:createSymbol",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "reference:symbols.push",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "reference:relationships.push",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "reference:definition.imports.includes",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:83:variable:moduleName",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:83:variable:moduleName",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:190:method:getImportTarget",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:85:variable:moduleId",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "reference:definition.calls.includes",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:106:variable:callee",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:106:variable:callee",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:209:method:getCallName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:108:variable:referenceId",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "reference:referenceSymbols.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "reference:referenceSymbols.set",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:61:variable:visit",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "reference:symbols.push",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:35:method:extractFrom",
+      "targetId": "reference:referenceSymbols.values",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:140:method:getGrammar",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:140:method:getGrammar",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:146:variable:grammar",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:146:variable:grammar",
+      "targetId": "reference:file.toLowerCase().endsWith",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:146:variable:grammar",
+      "targetId": "reference:file.toLowerCase",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:140:method:getGrammar",
+      "targetId": "reference:Error",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:140:method:getGrammar",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:155:variable:grammar",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:162:method:getNodeName",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:162:method:getNodeName",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:164:variable:field",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:164:variable:field",
+      "targetId": "reference:node.childForFieldName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:162:method:getNodeName",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:166:variable:identifier",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:166:variable:identifier",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:177:method:findIdentifier",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:162:method:getNodeName",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:173:variable:identifier",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:173:variable:identifier",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:177:method:findIdentifier",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:177:method:findIdentifier",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:177:method:findIdentifier",
+      "targetId": "reference:identifierTypes.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:177:method:findIdentifier",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:182:variable:identifier",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:182:variable:identifier",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:177:method:findIdentifier",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:190:method:getImportTarget",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:190:method:getImportTarget",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:192:variable:field",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:192:variable:field",
+      "targetId": "reference:node.childForFieldName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:190:method:getImportTarget",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:289:method:removeQuotes",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:190:method:getImportTarget",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:204:variable:rawText",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:190:method:getImportTarget",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:205:variable:quotedTarget",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:205:variable:quotedTarget",
+      "targetId": "reference:rawText.match",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:209:method:getCallName",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:209:method:getCallName",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:210:variable:callee",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:210:variable:callee",
+      "targetId": "reference:node.childForFieldName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:209:method:getCallName",
+      "targetId": "reference:callee.text.trim",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:221:method:createSymbol",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:221:method:createSymbol",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:228:variable:startLine",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:221:method:createSymbol",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:241:method:getParameters",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:241:method:getParameters",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:241:method:getParameters",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:242:variable:parameters",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:242:variable:parameters",
+      "targetId": "reference:node.childForFieldName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:241:method:getParameters",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:249:variable:names",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:249:variable:names",
+      "targetId": "reference:parameters.namedChildren\r\n      .map((parameter) => {\r\n        const nameField =\r\n          parameter.childForFieldName('name') ??\r\n          parameter.childForFieldName('pattern');\r\n        const identifier = nameField\r\n          ? this.findIdentifier(nameField)\r\n          : this.findIdentifier(parameter);\r\n        return identifier?.text;\r\n      })\r\n      .filter",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:249:variable:names",
+      "targetId": "reference:parameters.namedChildren\r\n      .map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:249:variable:names",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:251:variable:nameField",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:251:variable:nameField",
+      "targetId": "reference:parameter.childForFieldName",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:249:variable:names",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:254:variable:identifier",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:254:variable:identifier",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:177:method:findIdentifier",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:249:variable:names",
+      "targetId": "reference:Boolean",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:264:method:refineSymbolType",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:264:method:refineSymbolType",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:278:method:hasClassAncestor",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:278:method:hasClassAncestor",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:278:method:hasClassAncestor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:279:variable:parent",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:278:method:hasClassAncestor",
+      "targetId": "reference:classTypes.has",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:34:class:TreeSitterExtractor",
+      "targetId": "symbol:src/ast/TreeSitterExtractor.ts:289:method:removeQuotes",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:289:method:removeQuotes",
+      "targetId": "reference:value.replace(/^[\"'`]|[\"'`]$/g, '').replace",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterExtractor.ts:289:method:removeQuotes",
+      "targetId": "reference:value.replace",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterLanguage.ts",
+      "targetId": "module:./types",
+      "relation": "IMPORTS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterLanguage.ts",
+      "targetId": "symbol:src/ast/TreeSitterLanguage.ts:3:interface:LanguageDefinition",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterLanguage.ts",
+      "targetId": "symbol:src/ast/TreeSitterLanguage.ts:12:variable:languageDefinitions",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterLanguage.ts",
+      "targetId": "symbol:src/ast/TreeSitterLanguage.ts:117:variable:definitionByExtension",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterLanguage.ts:117:variable:definitionByExtension",
+      "targetId": "reference:Map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterLanguage.ts:117:variable:definitionByExtension",
+      "targetId": "reference:languageDefinitions.flatMap",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterLanguage.ts:117:variable:definitionByExtension",
+      "targetId": "reference:definition.extensions.map",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/TreeSitterLanguage.ts",
+      "targetId": "symbol:src/ast/TreeSitterLanguage.ts:123:function:languageForPath",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterLanguage.ts:123:function:languageForPath",
+      "targetId": "symbol:src/ast/TreeSitterLanguage.ts:124:variable:extension",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterLanguage.ts:124:variable:extension",
+      "targetId": "reference:filePath.slice(filePath.lastIndexOf('.')).toLowerCase",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterLanguage.ts:124:variable:extension",
+      "targetId": "reference:filePath.slice",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterLanguage.ts:124:variable:extension",
+      "targetId": "reference:filePath.lastIndexOf",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "symbol:src/ast/TreeSitterLanguage.ts:123:function:languageForPath",
+      "targetId": "reference:definitionByExtension.get",
+      "relation": "CALLS"
+    },
+    {
+      "sourceId": "file:src/ast/types.ts",
+      "targetId": "symbol:src/ast/types.ts:1:type:SupportedLanguage",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/types.ts",
+      "targetId": "symbol:src/ast/types.ts:10:type:SymbolType",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/types.ts",
+      "targetId": "symbol:src/ast/types.ts:25:interface:ExtractedSymbol",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/types.ts",
+      "targetId": "symbol:src/ast/types.ts:37:interface:ExtractedRelationship",
+      "relation": "CONTAINS"
+    },
+    {
+      "sourceId": "file:src/ast/types.ts",
+      "targetId": "symbol:src/ast/types.ts:45:interface:StandardizedOutput",
+      "relation": "CONTAINS"
+    }
+  ]
+}

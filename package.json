@@ -5,6 +5,10 @@
   "scripts": {
     "build": "tsc --noEmit",
     "index": "tsx src/ast/indexRepository.ts",
+    "convert": "tsx src/graph/convertAST.ts",
+    "extract": "tsx src/graph/testContextExtractor.ts",
+    "dependencies": "tsx src/graph/testDependencyBuilder.ts",
+    "generate": "tsx src/graph/testContextGenerator.ts",
     "test": "tsx --test src/ast/*.test.ts"
   },
   "dependencies": {

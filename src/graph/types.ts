@@ -17,3 +17,28 @@ export interface GraphData {
   nodes: GraphNode[];
   edges: GraphEdge[];
 }
+
+export type QueryIntentType = 'modify' | 'create' | 'fix' | 'refactor' | 'explain';
+
+export interface QueryOperation {
+  action: string;
+  target?: string;
+  replacement?: string;
+}
+
+export interface MatchedSymbol {
+  nodeId: string;
+  name: string;
+  type: string;
+  filePath: string;
+  confidence: number;
+  matchType: 'exact' | 'case-insensitive' | 'fuzzy' | 'file';
+}
+
+export interface QueryAnalysisResult {
+  query: string;
+  intent: QueryIntentType;
+  operations: QueryOperation[];
+  extractedKeywords: string[];
+  targetSymbols: MatchedSymbol[];
+}

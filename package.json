@@ -4,13 +4,17 @@
   "private": true,
   "scripts": {
     "build": "tsc --noEmit",
+    "build-graph": "tsx src/graph/buildGraph.ts",
+    "plan": "tsx src/graph/planContext.ts",
+    "eval": "tsx src/graph/evalRetrieval.ts",
     "index": "tsx src/ast/indexRepository.ts",
     "convert": "tsx src/graph/convertAST.ts",
     "extract": "tsx src/graph/testContextExtractor.ts",
     "dependencies": "tsx src/graph/testDependencyBuilder.ts",
     "generate": "tsx src/graph/testContextGenerator.ts",
     "analyze": "tsx src/graph/testQueryAnalyzer.ts",
-    "test": "tsx --test src/ast/*.test.ts"
+    "test": "tsx --test src/ast/*.test.ts",
+    "test:graph": "tsx --test src/graph/*.test.ts"
   },
   "dependencies": {
     "tree-sitter": "0.21.1",

@@ -1,0 +1,217 @@
+{
+  "summary": {
+    "totalCases": 13,
+    "targetAccuracyPct": 100,
+    "statusAccuracyPct": 100,
+    "fileRecallPct": 100,
+    "avgLatencyMs": 30,
+    "avgContextChars": 22995,
+    "contextReductionPct": 81
+  },
+  "results": [
+    {
+      "id": "exact-01",
+      "category": "exact_symbol",
+      "description": "Exact method name lookup without file context",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 56,
+      "actualStatus": "matched",
+      "actualTarget": "buildContext",
+      "actualFile": "src/graph/DependencyBuilder.ts",
+      "codeLength": 30816,
+      "reasons": [
+        "Exact symbol name match: 'buildContext'"
+      ]
+    },
+    {
+      "id": "exact-02",
+      "category": "exact_symbol",
+      "description": "Exact class name lookup",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 33,
+      "actualStatus": "matched",
+      "actualTarget": "ContextExtractor",
+      "actualFile": "src/graph/ContextExtractor.ts",
+      "codeLength": 23053,
+      "reasons": [
+        "Exact symbol name match: 'ContextExtractor'"
+      ]
+    },
+    {
+      "id": "exact-03",
+      "category": "exact_symbol",
+      "description": "Exact method lookup with file constraint in query",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 39,
+      "actualStatus": "matched",
+      "actualTarget": "extractCodeForNode",
+      "actualFile": "src/graph/ContextExtractor.ts",
+      "codeLength": 31527,
+      "reasons": [
+        "Exact symbol name match: 'extractCodeForNode'"
+      ]
+    },
+    {
+      "id": "exact-04",
+      "category": "exact_symbol",
+      "description": "Exact function name lookup for standalone function",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 34,
+      "actualStatus": "matched",
+      "actualTarget": "indexRepository",
+      "actualFile": "src/ast/indexRepository.ts",
+      "codeLength": 23193,
+      "reasons": [
+        "Exact symbol name match: 'indexRepository'"
+      ]
+    },
+    {
+      "id": "exact-05",
+      "category": "exact_symbol",
+      "description": "Exact file lookup by path",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 38,
+      "actualStatus": "matched",
+      "actualTarget": "types.ts",
+      "actualFile": "src/graph/types.ts",
+      "codeLength": 31564,
+      "reasons": [
+        "Exact file name match: 'src/graph/types.ts'"
+      ]
+    },
+    {
+      "id": "vague-workspace-01",
+      "category": "workspace_context",
+      "description": "Completely vague query with active file and cursor on method line 44",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 26,
+      "actualStatus": "matched",
+      "actualTarget": "buildContext",
+      "actualFile": "src/graph/DependencyBuilder.ts",
+      "codeLength": 28077,
+      "reasons": [
+        "Enclosing symbol containing cursor at line 44: 'buildContext'"
+      ]
+    },
+    {
+      "id": "vague-workspace-02",
+      "category": "workspace_context",
+      "description": "Vague bug report with cursor on extractCodeById line 50",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 34,
+      "actualStatus": "matched",
+      "actualTarget": "extractCodeById",
+      "actualFile": "src/graph/ContextExtractor.ts",
+      "codeLength": 31463,
+      "reasons": [
+        "Enclosing symbol containing cursor at line 50: 'extractCodeById'"
+      ]
+    },
+    {
+      "id": "vague-workspace-03",
+      "category": "workspace_context",
+      "description": "Active file with open dependency tabs and cursor on generator",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 12,
+      "actualStatus": "matched",
+      "actualTarget": "generate",
+      "actualFile": "src/graph/MinimalContextGenerator.ts",
+      "codeLength": 13774,
+      "reasons": [
+        "Cursor at line 25 inside symbol 'generate'"
+      ]
+    },
+    {
+      "id": "error-01",
+      "category": "error_context",
+      "description": "Error query with stack trace pointing to DependencyBuilder.ts:40",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 30,
+      "actualStatus": "matched",
+      "actualTarget": "buildContext",
+      "actualFile": "src/graph/DependencyBuilder.ts",
+      "codeLength": 31790,
+      "reasons": [
+        "Enclosing symbol for crash frame at line 40: 'buildContext'"
+      ]
+    },
+    {
+      "id": "error-02",
+      "category": "error_context",
+      "description": "Crash frame pointing to extractCodeForNode in ContextExtractor.ts:22",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 33,
+      "actualStatus": "matched",
+      "actualTarget": "extractCodeForNode",
+      "actualFile": "src/graph/ContextExtractor.ts",
+      "codeLength": 21789,
+      "reasons": [
+        "Enclosing symbol for crash frame at line 22: 'extractCodeForNode'"
+      ]
+    },
+    {
+      "id": "domain-01",
+      "category": "domain_query",
+      "description": "Domain concept query matching behavior tags and identifiers",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 37,
+      "actualStatus": "matched",
+      "actualTarget": "CodeGraph",
+      "actualFile": "src/graph/CodeGraph.ts",
+      "codeLength": 31889,
+      "reasons": [
+        "Exact symbol name match: 'CodeGraph'"
+      ]
+    },
+    {
+      "id": "insufficient-01",
+      "category": "insufficient_evidence",
+      "description": "Completely vague query with no file, no cursor, no stack trace",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 10,
+      "actualStatus": "insufficient_evidence",
+      "actualTarget": null,
+      "actualFile": null,
+      "codeLength": 0,
+      "reasons": []
+    },
+    {
+      "id": "insufficient-02",
+      "category": "insufficient_evidence",
+      "description": "Generic prompt with generic dev words only",
+      "statusMatch": true,
+      "targetMatch": true,
+      "fileMatch": true,
+      "latencyMs": 10,
+      "actualStatus": "insufficient_evidence",
+      "actualTarget": null,
+      "actualFile": null,
+      "codeLength": 0,
+      "reasons": []
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+[
+  {
+    "id": "exact-01",
+    "category": "exact_symbol",
+    "description": "Exact method name lookup without file context",
+    "input": {
+      "query": "Find the buildContext method"
+    },
+    "expectedTarget": "buildContext",
+    "expectedFile": "src/graph/DependencyBuilder.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "exact-02",
+    "category": "exact_symbol",
+    "description": "Exact class name lookup",
+    "input": {
+      "query": "Where is ContextExtractor defined?"
+    },
+    "expectedTarget": "ContextExtractor",
+    "expectedFile": "src/graph/ContextExtractor.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "exact-03",
+    "category": "exact_symbol",
+    "description": "Exact method lookup with file constraint in query",
+    "input": {
+      "query": "extractCodeForNode in ContextExtractor.ts"
+    },
+    "expectedTarget": "extractCodeForNode",
+    "expectedFile": "src/graph/ContextExtractor.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "exact-04",
+    "category": "exact_symbol",
+    "description": "Exact function name lookup for standalone function",
+    "input": {
+      "query": "Explain how indexRepository works"
+    },
+    "expectedTarget": "indexRepository",
+    "expectedFile": "src/ast/indexRepository.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "exact-05",
+    "category": "exact_symbol",
+    "description": "Exact file lookup by path",
+    "input": {
+      "query": "Inspect src/graph/types.ts"
+    },
+    "expectedTarget": "types.ts",
+    "expectedFile": "src/graph/types.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "vague-workspace-01",
+    "category": "workspace_context",
+    "description": "Completely vague query with active file and cursor on method line 44",
+    "input": {
+      "query": "this is not working can you resolve it",
+      "activeFile": "src/graph/DependencyBuilder.ts",
+      "cursorLine": 44
+    },
+    "expectedTarget": "buildContext",
+    "expectedFile": "src/graph/DependencyBuilder.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "vague-workspace-02",
+    "category": "workspace_context",
+    "description": "Vague bug report with cursor on extractCodeById line 50",
+    "input": {
+      "query": "fix this error please",
+      "activeFile": "src/graph/ContextExtractor.ts",
+      "cursorLine": 50
+    },
+    "expectedTarget": "extractCodeById",
+    "expectedFile": "src/graph/ContextExtractor.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "vague-workspace-03",
+    "category": "workspace_context",
+    "description": "Active file with open dependency tabs and cursor on generator",
+    "input": {
+      "query": "why does this fail?",
+      "activeFile": "src/graph/MinimalContextGenerator.ts",
+      "cursorLine": 25,
+      "openFiles": [
+        "src/graph/MinimalContextGenerator.ts",
+        "src/graph/ContextExtractor.ts"
+      ]
+    },
+    "expectedTarget": "generate",
+    "expectedFile": "src/graph/MinimalContextGenerator.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "error-01",
+    "category": "error_context",
+    "description": "Error query with stack trace pointing to DependencyBuilder.ts:40",
+    "input": {
+      "query": "resolve this crash",
+      "errors": "Error: Node with ID targetId not found.\n    at buildContext (src/graph/DependencyBuilder.ts:40:13)"
+    },
+    "expectedTarget": "buildContext",
+    "expectedFile": "src/graph/DependencyBuilder.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "error-02",
+    "category": "error_context",
+    "description": "Crash frame pointing to extractCodeForNode in ContextExtractor.ts:22",
+    "input": {
+      "query": "The application crashed when reading node",
+      "errors": "Error: Node missing location data.\n    at extractCodeForNode (src/graph/ContextExtractor.ts:22:15)"
+    },
+    "expectedTarget": "extractCodeForNode",
+    "expectedFile": "src/graph/ContextExtractor.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "domain-01",
+    "category": "domain_query",
+    "description": "Domain concept query matching behavior tags and identifiers",
+    "input": {
+      "query": "Where is the CodeGraph behavior tagging and graph builder implemented?"
+    },
+    "expectedTarget": "CodeGraph",
+    "expectedFile": "src/graph/CodeGraph.ts",
+    "expectedStatus": "matched"
+  },
+  {
+    "id": "insufficient-01",
+    "category": "insufficient_evidence",
+    "description": "Completely vague query with no file, no cursor, no stack trace",
+    "input": {
+      "query": "something is not working can you fix it"
+    },
+    "expectedTarget": null,
+    "expectedFile": null,
+    "expectedStatus": "insufficient_evidence"
+  },
+  {
+    "id": "insufficient-02",
+    "category": "insufficient_evidence",
+    "description": "Generic prompt with generic dev words only",
+    "input": {
+      "query": "fix the bug and make it work please"
+    },
+    "expectedTarget": null,
+    "expectedFile": null,
+    "expectedStatus": "insufficient_evidence"
+  }
+]

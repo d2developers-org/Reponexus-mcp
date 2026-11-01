@@ -1,3 +1,26 @@
+// ─── Legacy / Developer 2 Compatibility Types ─────────────────
+
+export type NodeType = 'FILE' | 'CLASS' | 'FUNCTION' | 'METHOD' | 'INTERFACE' | 'VARIABLE';
+
+export interface Node {
+  id: string;
+  type: NodeType | string;
+  name: string;
+  filePath?: string;
+  startLine?: number;
+  endLine?: number;
+}
+
+export type EdgeType = 'CONTAINS' | 'IMPORTS' | 'CALLS' | 'REFERENCES' | 'EXTENDS' | 'IMPLEMENTS' | string;
+
+export interface Edge {
+  from: string; // Source Node ID
+  to: string; // Target Node ID
+  relation: EdgeType;
+}
+
+// ─────────────────────────────────────────────────────────────
+
 export interface GraphNode {
   id: string;
   type: string;

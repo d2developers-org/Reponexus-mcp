@@ -2,7 +2,10 @@
   "name": "reponexus-mcp",
   "version": "1.0.0",
   "private": true,
+  "main": "dist/index.js",
   "scripts": {
+    "start": "tsx src/index.ts",
+    "mcp": "tsx src/mcp/index.ts",
     "build": "tsc --noEmit",
     "build-graph": "tsx src/graph/buildGraph.ts",
     "plan": "tsx src/graph/planContext.ts",
@@ -17,6 +20,8 @@
     "test:graph": "tsx --test src/graph/*.test.ts"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "dotenv": "^18.0.5",
     "tree-sitter": "0.21.1",
     "tree-sitter-cpp": "0.23.0",
     "tree-sitter-go": "0.21.2",
@@ -29,7 +34,9 @@
   },
   "devDependencies": {
     "@types/node": "^26.4.0",
+    "ts-node": "^10.9.2",
     "tsx": "^4.23.12",
     "typescript": "^7.0.2"
   }
 }
+

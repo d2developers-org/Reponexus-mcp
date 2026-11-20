@@ -12,6 +12,7 @@
   },
   "include": [
     "src/**/*",
-    "learn-ts-morph/**/*"
+    "learn-ts-morph/**/*",
+    "test-files/**/*"
   ]
 }

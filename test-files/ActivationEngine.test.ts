@@ -2,11 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as path from 'node:path';
 import * as fs from 'node:fs';
-import { ActivationEngine } from './ActivationEngine';
-import { TargetResolver } from './TargetResolver';
-import { WorkspaceSignal } from './signals/WorkspaceSignal';
-import { QuerySignal } from './signals/QuerySignal';
-import { SAGEGraph, SAGENode, GraphEdge, Activation } from './types';
+import { ActivationEngine } from '../src/graph/ActivationEngine';
+import { TargetResolver } from '../src/graph/TargetResolver';
+import { WorkspaceSignal } from '../src/graph/signals/WorkspaceSignal';
+import { QuerySignal } from '../src/graph/signals/QuerySignal';
+import { SAGEGraph, SAGENode, GraphEdge, Activation } from '../src/graph/types';
 
 function loadTestGraph(): SAGEGraph {
   const graphPath = path.join(process.cwd(), 'data', 'sage-graph.json');

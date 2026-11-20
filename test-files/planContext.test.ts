@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { executePlanPipeline } from './planContext';
+import { executePlanPipeline } from '../src/graph/planContext';
 
 test('executePlanPipeline: vague query with cursor returns exact line range and supporting types', () => {
   const plan = executePlanPipeline({

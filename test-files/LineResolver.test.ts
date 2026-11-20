@@ -2,9 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as path from 'node:path';
 import * as fs from 'node:fs';
-import { LineResolver } from './LineResolver';
-import { ActivatedNodeResult } from './ActivationEngine';
-import { SAGEGraph, SAGENode } from './types';
+import { LineResolver } from '../src/graph/LineResolver';
+import { ActivatedNodeResult } from '../src/graph/ActivationEngine';
+import { SAGEGraph, SAGENode } from '../src/graph/types';
 
 function loadTestGraph(): SAGEGraph {
   const graphPath = path.join(process.cwd(), 'data', 'sage-graph.json');

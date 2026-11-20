@@ -8,8 +8,8 @@ import {
   inferBehaviorTags,
   extractErrorPatterns,
   extractIdentifiers,
-} from './CodeGraph';
-import { SAGEGraph } from './types';
+} from '../src/graph/CodeGraph';
+import { SAGEGraph } from '../src/graph/types';
 
 test('splitKeywords correctly splits camelCase, snake_case and paths', () => {
   const keywords = splitKeywords('src/auth/AuthService.ts');

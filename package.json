@@ -16,8 +16,9 @@
     "dependencies": "tsx src/graph/testDependencyBuilder.ts",
     "generate": "tsx src/graph/testContextGenerator.ts",
     "analyze": "tsx src/graph/testQueryAnalyzer.ts",
-    "test": "tsx --test src/ast/*.test.ts",
-    "test:graph": "tsx --test src/graph/*.test.ts"
+    "test": "tsx --test src/**/*.test.ts test-files/*.test.ts",
+    "test:graph": "tsx --test test-files/*.test.ts",
+    "test:patch": "tsx --test src/patch/*.test.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.0",
